@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- AimDot: ống ngắm neon (xanh lá → cyan) + chấm đỏ ở tâm, trên nền vuông bo góc tối.
+       scripts/gen-assets.ps1 vẽ lại đúng hình học này ra PNG/ICO. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2438"/>
+      <stop offset="1" stop-color="#0B0E14"/>
+    </linearGradient>
+    <linearGradient id="neon" gradientUnits="userSpaceOnUse" x1="172" y1="172" x2="852" y2="852">
+      <stop offset="0" stop-color="#00E59B"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="208" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="250" fill="none" stroke="url(#neon)" stroke-width="60"/>
+  <g stroke="url(#neon)" stroke-width="60" stroke-linecap="round">
+    <path d="M512 172 V340"/>
+    <path d="M512 684 V852"/>
+    <path d="M172 512 H340"/>
+    <path d="M684 512 H852"/>
+  </g>
+  <circle cx="512" cy="512" r="60" fill="#FF3B4A"/>
+</svg>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AimDot — Tâm ngắm tùy chỉnh cho game / Custom crosshair overlay</title>
+  <meta name="description" content="AimDot đặt tâm ngắm sắc nét, tùy chỉnh vào giữa màn hình cho game Borderless/cửa sổ trên Windows. Chuẩn từng pixel, bấm xuyên qua, cực nhẹ, an toàn với anti-cheat.">
+  <link rel="icon" href="app-icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img src="app-icon.svg" alt="" width="72" height="72">
+      <div>
+        <h1>AimDot</h1>
+        <p class="lead">Tâm ngắm tùy chỉnh, chuẩn từng pixel, nằm giữa màn hình cho mọi game.</p>
+        <p class="lead muted" lang="en">A crisp, custom crosshair overlay for any game on Windows.</p>
+      </div>
+    </header>
+
+    <p class="cta">
+      <!-- Thay bằng https://apps.microsoft.com/detail/<Store ID> khi app được duyệt -->
+      <span class="button disabled">Sắp có trên Microsoft Store · Coming soon</span>
+    </p>
+
+    <img class="shot" src="screenshots/en-1-overlay.png" alt="AimDot crosshair overlay over a test scene, with a 6× magnified inset">
+
+    <section class="grid">
+      <div><h2>Chuẩn từng pixel</h2><p>Nét thẳng khớp lưới pixel, không mờ. Chữ thập, chấm, vòng tròn, chữ T, viền, độ đậm, mọi màu.</p></div>
+      <div><h2>Phím tắt khi đang chơi</h2><p>Ctrl+Alt+H hiện/ẩn, Ctrl+Alt+←/→ đổi profile. Đổi được trong Cài đặt.</p></div>
+      <div><h2>Cực nhẹ</h2><p>Chỉ vẽ lại khi bạn thay đổi gì đó — khoảng 0,1% của 1 nhân CPU khi đang hiện.</p></div>
+      <div><h2>An toàn với anti-cheat</h2><p>Chỉ là cửa sổ overlay. Không chèn code, không hook DirectX, không đọc bộ nhớ game.</p></div>
+    </section>
+
+    <img class="shot" src="screenshots/vi-2-designer.png" alt="Trình thiết kế tâm ngắm của AimDot với bản xem trước trực tiếp">
+
+    <section>
+      <h2>AimDot Pro</h2>
+      <p>Bản cơ bản có 10 mẫu có sẵn và 1 profile tự tạo. <strong>Pro</strong> (mua một lần trong ứng dụng qua Microsoft Store) mở khóa không giới hạn profile, tâm ngắm bằng ảnh PNG, tự đổi profile theo từng game và mã chia sẻ tâm ngắm.</p>
+      <p class="muted" lang="en">Pro (one-time in-app purchase) unlocks unlimited profiles, PNG crosshairs, per-game automatic profiles and share codes.</p>
+    </section>
+
+    <section>
+      <h2>Tương thích / Compatibility</h2>
+      <p>Windows 10 2004+ / Windows 11, x64. Chạy với game ở chế độ <strong>Borderless</strong> hoặc cửa sổ. Không hỗ trợ <em>exclusive fullscreen</em> vì Windows không cho cửa sổ nào hiện đè lên chế độ này.</p>
+      <p class="muted" lang="en">Works with borderless windowed and windowed games. Exclusive fullscreen is not supported (no window can appear above it).</p>
+    </section>
+
+    <section id="support">
+      <h2>Hỗ trợ / Support</h2>
+      <p>Email: <a href="mailto:tranxuandat.dev@gmail.com">tranxuandat.dev@gmail.com</a> — gửi kèm phiên bản (tab Giới thiệu trong app) và mô tả lỗi.</p>
+      <details>
+        <summary>Không thấy tâm ngắm trong game?</summary>
+        <p>Chuyển chế độ hiển thị của game sang <strong>Borderless</strong> / "Fullscreen windowed". Kiểm tra công tắc "Tâm ngắm BẬT" hoặc nhấn Ctrl+Alt+H.</p>
+      </details>
+      <details>
+        <summary>Tâm ngắm lệch so với tâm của game?</summary>
+        <p>Dùng mục Vị trí trong tab Thiết kế để dịch từng pixel, hoặc trong Cài đặt chọn "Giữa cửa sổ đang dùng" nếu game chạy dạng cửa sổ.</p>
+      </details>
+      <details>
+        <summary>AimDot có bị anti-cheat chặn không?</summary>
+        <p>AimDot không chạm vào tiến trình game: không chèn DLL, không hook đồ họa, không đọc bộ nhớ. Tuy vậy mỗi game có luật riêng về overlay tâm ngắm — hãy kiểm tra quy định của game bạn chơi, nhất là ở giải đấu.</p>
+      </details>
+      <details>
+        <summary>Đã mua Pro nhưng app vẫn báo bản thường?</summary>
+        <p>Đăng nhập Microsoft Store bằng đúng tài khoản đã mua, mở lại AimDot. Vẫn lỗi thì gửi email cho chúng tôi.</p>
+      </details>
+    </section>
+
+    <footer class="muted">
+      © 2026 dooxx · <a href="privacy.html">Chính sách quyền riêng tư / Privacy</a>
+    </footer>
+  </main>
+</body>
+</html>
